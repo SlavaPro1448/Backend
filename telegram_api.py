@@ -51,7 +51,10 @@ CORS(app, origins=[
     "https://frontend-delta-six-85.vercel.app",
     "https://frontend-six-neon-93.vercel.app",
     "https://frontend-git-main-slavapro1448s-projects.vercel.app",
-    "https://frontend-c2cw7uk9d-slavapro1448s-projects.vercel.app"
+    "https://frontend-c2cw7uk9d-slavapro1448s-projects.vercel.app",
+    "https://frontend-delta-six-85.vercel.app",
+    "https://frontend-git-main-slavapro1448s-projects.vercel.app",
+    "https://frontend-jl6zjnbbo-slavapro1448s-projects.vercel.app"
 ]) # замените на свой домен Vercel
 
 # Инициализация базы данных
