@@ -15,7 +15,6 @@ import traceback
 from telethon.errors import SessionPasswordNeededError
 import requests
 from flask_cors import CORS
-CORS(app, origins=['https://your-project.vercel.app'])  # заменишь на свой домен Vercel
 
 SUPABASE_URL = "https://mhdjkfjacsvjtiivogtd.supabase.co"
 SUPABASE_SERVICE_ROLE = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1oZGprZmphY3N2anRpaXZvZ3RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE1NDE5MDAsImV4cCI6MjA2NzExNzkwMH0.QWpcEnUY0lp-bcCVhL8YR4zXWPsMwsDG-OW5ZWJ33eM"
@@ -46,7 +45,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-secret-key-here')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///users.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-CORS(app)
+CORS(app, origins=['https://your-project.vercel.app'])  # замените на свой домен Vercel
 
 # Инициализация базы данных
 db = SQLAlchemy(app)
