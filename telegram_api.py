@@ -45,11 +45,14 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-secret-key-here')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///users.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+from flask_cors import CORS
+
 CORS(app, origins=[
-       "https://frontend-six-neon-93.vercel.app",
-       "https://frontend-git-main-slavapro1448s-projects.vercel.app",
-       "https://frontend-c2cw7uk9d-slavapro1448s-projects.vercel.app"
-   ])  # замените на свой домен Vercel
+    "https://frontend-delta-six-85.vercel.app",
+    "https://frontend-six-neon-93.vercel.app",
+    "https://frontend-git-main-slavapro1448s-projects.vercel.app",
+    "https://frontend-c2cw7uk9d-slavapro1448s-projects.vercel.app"
+]) # замените на свой домен Vercel
 
 # Инициализация базы данных
 db = SQLAlchemy(app)
